@@ -37,7 +37,6 @@ def get_all_tickets():
         return jsonify({'erro': str(e)}), 500
 
 
-
 @tickets_bp.route('/<int:id>', methods=['GET'])
 def get_ticket_by_id(id):
     try:
